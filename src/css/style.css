@@ -39,7 +39,7 @@ header {
 
 #container {
     background-color: #272928;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,6 +90,10 @@ header {
 .title-links {
     text-align: center;
     color: white;
+}
+
+.aguarde {
+    margin-bottom: 2rem;
 }
 
 .link-box {
