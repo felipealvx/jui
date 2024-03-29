@@ -96,6 +96,33 @@ header {
     margin-bottom: 2rem;
 }
 
+.color {
+    color: var(--red);
+}
+
+.email {
+    padding: 0.675rem;
+    display: flex;
+    align-items: center;
+    color: #272928;
+    background-color: white;
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    justify-content: space-between;
+    font-weight: 800;
+    transition: all .4s ease-in;
+}
+
+.email:hover {
+    background-color: var(--red);
+    color: white;
+}
+
+#email-icon {
+    font-size: 1.25rem;
+}
+
 .link-box {
     background-color: white;
     text-decoration: none;
@@ -153,4 +180,56 @@ footer {
 
 .img-footer {
     height: 6.25rem;
+}
+
+@media screen  and (min-width: 1024px) {
+    #container {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .name-link {
+        margin: 1rem;
+    }
+
+    #links {
+        width: 50%;
+    }
+
+    .title-links {
+        margin: 1.25rem 0;
+    }
+
+    .email {
+        color: #272928;
+        text-decoration: none;
+        padding: 1.25rem;
+        background-color: white;
+        display: flex;
+        margin: 1.25rem 0;
+        border-radius: 10px;
+        font-weight: 800;
+        align-items: center;
+        position: absolute;
+        width: 400px;
+        transition: all .4s ease-in;
+    }
+    
+    .email:hover {
+        background-color: var(--red);
+        color: white;
+    }
+
+    #email-icon {
+        position: absolute;
+        right: 20px;
+        font-size: 1.25rem;
+    }
+
+    .navfooter {
+        display: flex;
+        flex-direction: row;
+    }
 }
